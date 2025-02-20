@@ -1,0 +1,181 @@
+# General
+.DS_Store
+Thumbs.db
+*.log
+*.tmp
+*.swp
+*.bak
+*.asv
+*.swo
+debug.log
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+lerna-debug.log
+
+# Node.js and npm
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+npm-shrinkwrap.json
+
+# Yarn
+yarn-error.log
+
+# pnpm
+pnpm-lock.yaml
+
+# Parcel
+.parcel-cache
+dist
+
+# Next.js
+.next
+out
+build
+
+# Nuxt.js
+.nuxt
+dist
+
+# Gatsby
+.cache
+public
+
+# Vue.js
+node_modules
+dist
+
+# Angular
+node_modules
+dist
+/out-tsc
+/bazel-bin
+/bazel-gen
+/bazel-out
+/bazel-testlogs
+/bazel-cache
+
+# SvelteKit
+.svelte-kit
+build
+
+# Ionic/Capacitor
+node_modules/
+www/
+resources/
+platforms/
+
+# Expo
+node_modules/
+.expo/
+.eas-build-cache/
+web-build/
+ios/build/
+android/build/
+dist/
+build/
+
+# React Native
+node_modules/
+android/build/
+ios/build/
+
+# Static Site Generators
+public
+.cache
+.jekyll-cache
+_site
+.netlify
+.nojekyll
+.publish
+.vercel
+
+# Serverless
+.serverless
+.webpack
+.aws-sam
+dist
+
+# C# and .NET
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.sln
+*.csproj
+_ReSharper*/
+*.DotSettings.user
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# macOS
+.AppleDouble
+.LSOverride
+
+# Environment configuration files
+.env
+.env.local
+.env.development
+.env.production
+.env.test
+
+# Firebase related ignores - adjust as needed
+firebase-debug.log
+!firebase.json # Important: Do NOT ignore firebase.json and .firebaserc if you want to commit them
+!/.firebaserc
+
+# Cloud Functions
+functions/node_modules
+functions/logs
+functions/lib
+functions/client
+
+# CI/CD
+.gitlab-ci.yml
+.circleci
+.travis.yml
+appveyor.yml
+Jenkinsfile
+
+# Docker
+docker-compose.yml
+docker-compose.*.yml
+Dockerfile
+.dockerignore
+
+# Kubernetes
+k8s-*
+kube-*
+*.kubeconfig
+
+# Terraform
+.terraform
+.terraform.lock.hcl
+terraform.tfstate*
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Python
+*.pyc
+__pycache__/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.dmypy.json
+.venv/
+venv/
+env/
+environments/
