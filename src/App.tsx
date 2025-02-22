@@ -9,8 +9,8 @@ import DashboardPage from './pages/DashboardPage';
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
+    <Router> 
+      <AuthProvider>
         <Navbar />
         <main>
           <Routes>
@@ -21,8 +21,8 @@ function App() {
           </Routes>
         </main>
         <Footer />
-      </Router>
-    </AuthProvider>
+      </AuthProvider>
+    </Router>
   );
 }
 

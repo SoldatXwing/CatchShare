@@ -6,7 +6,7 @@ const Footer: React.FC = () => {
       <div className="container mx-auto px-4 text-center">
         <p>&copy; {new Date().getFullYear()} CatchShare. All rights reserved.</p>
         <p className="mt-2">
-          Powered by Firebase & React
+          Powered by Supabase & React
         </p>
       </div>
     </footer>

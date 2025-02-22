@@ -26,7 +26,7 @@ const Navbar: React.FC = () => {
           {user ? (
             <div className="flex items-center space-x-4">
               <span>{user.email}</span>
-              <Button variant="ghost" onClick={handleLogout}>Logout</Button>
+              <Button variant="secondary" onClick={handleLogout}>Logout</Button>
             </div>
           ) : (
             <div className="space-x-4">

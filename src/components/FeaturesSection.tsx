@@ -9,7 +9,7 @@ const FeaturesSection: React.FC = () => {
         <motion.h2
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
+          transition={{ duration: 0.2, type: 'spring', stiffness: 100 }}
           className="text-3xl font-bold text-gray-800 mb-12"
         >
           Key Features
@@ -18,48 +18,64 @@ const FeaturesSection: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
+            whileHover={{ scale: 1.05, transition: { duration: 0 } }}
+            transition={{ duration: 0.15, type: 'spring', stiffness: 300 }}
             className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="inline-flex p-3 bg-blue-100 text-blue-500 rounded-full mb-4">
+            <motion.div
+              className="inline-flex p-3 bg-blue-100 text-blue-500 rounded-full mb-4"
+              transition={{ type: 'spring', stiffness: 300, duration: 0.15 }}
+            >
               <Upload className="h-6 w-6" />
-            </div>
+            </motion.div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Upload Catches</h3>
             <p className="text-gray-600">Easily upload photos and details of your prized fishing catches.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+            whileHover={{ scale: 1.04, transition: { duration: 0.3 } }}
+            transition={{ duration: 0.15, type: 'spring', stiffness: 200 }}
+            className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg"
           >
-            <div className="inline-flex p-3 bg-green-100 text-green-500 rounded-full mb-4">
+            <motion.div
+              className="inline-flex p-3 bg-green-100 text-green-500 rounded-full mb-4"
+              transition={{ type: 'spring', stiffness: 300, duration: 0.15 }}
+            >
               <Heart className="h-6 w-6" />
-            </div>
+            </motion.div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Like Catches</h3>
             <p className="text-gray-600">Show appreciation for amazing catches by liking them.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
+            whileHover={{ scale: 1.05, transition: { duration: 0 } }}
+            transition={{ duration: 0.15, type: 'spring', stiffness: 300 }}
             className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="inline-flex p-3 bg-purple-100 text-purple-500 rounded-full mb-4">
+            <motion.div
+              className="inline-flex p-3 bg-purple-100 text-purple-500 rounded-full mb-4"
+              transition={{ type: 'spring', stiffness: 300, duration: 0.15 }}
+            >
               <MessageSquare className="h-6 w-6" />
-            </div>
+            </motion.div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Comment on Catches</h3>
             <p className="text-gray-600">Engage with the community by commenting on shared catches.</p>
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5, delay: 1.0 }}
+            whileHover={{ scale: 1.05, transition: { duration: 0 } }}
+            transition={{ duration: 0.15, type: 'spring', stiffness: 300 }}
             className="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
           >
-            <div className="inline-flex p-3 bg-orange-100 text-orange-500 rounded-full mb-4">
+            <motion.div
+              className="inline-flex p-3 bg-orange-100 text-orange-500 rounded-full mb-4"
+              transition={{ type: 'spring', stiffness: 300, duration: 0.15 }}
+            >
               <Users className="h-6 w-6" />
-            </div>
+            </motion.div>
             <h3 className="text-xl font-semibold text-gray-800 mb-2">User Profiles</h3>
             <p className="text-gray-600">Create your profile and track your uploaded catches.</p>
           </motion.div>

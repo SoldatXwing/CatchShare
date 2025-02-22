@@ -8,9 +8,9 @@ import { FcGoogle } from "react-icons/fc";
 const Login: React.FC = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [emailError, setEmailError] = useState<string | null>(null);
-  const [passwordError, setPasswordError] = useState<string | null>(null);
-  const [generalError, setGeneralError] = useState<string | null>(null);
+  const [emailError, setEmailError] = useState<string | undefined>(undefined);
+  const [passwordError, setPasswordError] = useState<string | undefined>(undefined);
+  const [generalError, setGeneralError] = useState<string | undefined>(undefined);
   const { login, googleSignIn } = useAuth();
   const navigate = useNavigate();
 
@@ -21,9 +21,9 @@ const Login: React.FC = () => {
 
   const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault();
-    setEmailError(null);
-    setPasswordError(null);
-    setGeneralError(null);
+    setEmailError(undefined);
+    setPasswordError(undefined);
+    setGeneralError(undefined);
 
     let isValid = true;
     if (!email) {
@@ -51,10 +51,12 @@ const Login: React.FC = () => {
   };
 
   const handleGoogleSignIn = async () => {
-    setGeneralError(null);
+    setGeneralError(undefined);
     try {
-      await googleSignIn();
-      navigate('/dashboard');
+      if(await googleSignIn())
+      {
+        navigate('/dashboard');
+      }
     } catch (err: any) {
       setGeneralError(err.message);
     }
